@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            font-size: 1.5rem;
+            background-color: #f1f1f1;
+        }
+        nav ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content:end;
+        }
+        nav ul li{
+            cursor: pointer;
+            padding: 0.5rem;
+            /* margin:0.5rem 2rem; */
+        }
+        nav ul li:hover{
+            background-color: #555;
+            color: #f1f1f1;
+        }
+        @media all and (max-width:400px) {
+            nav ul{
+                flex-direction: column;
+            }
+            nav ul li{
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>

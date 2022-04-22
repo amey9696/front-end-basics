@@ -1,0 +1,48 @@
+<!-- vodeo27 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS visibility and z-index</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 3px solid red;
+        }
+        #box1{
+            position: relative;
+            background-color: cyan;
+            top: 49px;
+            z-index: 35;
+        }
+        #box2{
+            background-color: magenta;
+            position: relative;
+            top: 14px;
+            z-index: 34;
+        }
+        #box3{
+            background-color: yellow;
+        }
+        #box4{
+            visibility: hidden;/*only hide the box but space of box is reserved i.e not hided*/
+            display: none;/*space and element both hide */
+        
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
+
+<!-- div#box$*4 means create 4 div with id box1,box2, box3,box4, $ means number series 1 to n here series is 1 to 4 -->
+<!-- default value of visibility is visible -->
+<!-- z-index work only on the position(relative,sticky,absolute,fixed) but not work on position:static;-->

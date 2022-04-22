@@ -1,0 +1,55 @@
+                                                        <!-- video 25 -->
+<!-- css position property- absolute, relative, fixed ,sticky -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>css position property</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: khaki;
+            height: 3444px;
+        }
+       .box{
+           border: 2px solid red;
+           width: 150px;
+           height: 150px;
+           margin: 2px;
+           display: inline-block;
+       }
+       #box3{
+           /*position: relative;/*realtive to normal position and will a gap at its normal positon*/
+           /*position: absolute;/*relative to the parent here parent is .container, to the position of its first parent*/
+           /*top: 34px;
+           left: 34px;*/ 
+           
+           position: sticky;
+           top: 3px;
+        } 
+        #box4{ 
+           position: fixed;/*if u scroll then this box is fixed no window not changed after scroll up and down*/
+           right: 4px;
+           bottom: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3 chat here</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>
+<!-- in inline-block only we can set width and height -->
+<!-- by default position property is static -->
+<!-- position: absolute; box 3 is overlapped on box 4 -->
+<!-- position: relative; we can use top bottom left right property (of marfin and padding) -->
+<!-- position: fixed;position relative to the browser window  -->
+<!-- position: sicky; if u scroll page then element cannot be changed -->
+
+

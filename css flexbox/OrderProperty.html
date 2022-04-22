@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Property</title>
+    <style>
+        h1{
+            padding: 0 0 0 40px;
+        }
+        .container{
+            background: #eee;
+            margin: 50px;
+            padding: 10px;
+            border: 3px solid #000;
+            height: 150px;
+            display: flex;
+        }
+        .item1{background: orangered;order: 1;}
+        .item2{background: yellowgreen;order: -1;}
+        .item3{background: mediumpurple;order: 2;}
+        .item4{background: hotpink;order: -2;}
+        .item5{background: royalblue;}
+        .items{
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ORDER PROPERTY</h1>
+    <p>Order Means changing items positions..default value is 0</p>
+    <p>like a grap i.e   -4 -3 -2 -1 0 1 2 3 4</p>
+    <p>In Responsive design order is used</p>
+    <div class="container">
+        <div class="items item1">One</div>
+        <div class="items item2">Two</div>
+        <div class="items item3">Three</div>
+        <div class="items item4">Four</div>
+        <div class="items item5">Five</div>
+    </div>
+</body>
+</html>

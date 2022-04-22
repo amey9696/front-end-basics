@@ -1,0 +1,52 @@
+                                    <!-- video22 -->   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Selectors</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(223, 245, 201);
+            padding: 34px;
+            margin: auto;
+            width: 666px;
+        }
+        a{
+            text-decoration: none;/*underlone invisible*/
+        }
+        a:hover{/*it is called as psuedo selector*/
+            color: white;/*when curson go to anchor tag then word color and background color change*/
+            background-color: black;
+        }
+        a:visited{/*it is also called as psuedo selector*/
+            color: yellow;/*if u open link then it permanentally change into these color*/
+        }
+        a:active{
+            background-color: blueviolet;/**/
+        }
+        .btn{
+            background-color: crimson;
+            padding: 6px;
+            border: none;/*border invisible*/
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 4px;
+        }
+        #bt:hover{
+            color: blue;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus fugit beatae fugiat aut quo modi, numquam debitis, iure harum, officia commodi. Quos doloremque enim, aperiam fugiat a magni dolore temporibus!</p>
+        <a href="https://www.facebook.com/" class="btn">Read more</a>
+        <button class="btn" id="bt">Contact us</button>
+    </div>
+</body>
+</html>

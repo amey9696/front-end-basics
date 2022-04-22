@@ -1,0 +1,56 @@
+<!-- 
+                                    VIDEO 29
+what is a responsive design?
+Endless new resolutions and devices are difficult to suppport seperately for a web developer.
+Responsive design is a way for a web developer to make his website adapt to all the devices and resolutions.
+Responsive design is a necessity and not a luxury anymore!
+
+Varius Ways to Acheive Responsive Design=
+    1. Setting up the viewport
+    2. Use max-width/max-height
+   *3. Using CSS Media Quaries
+    4. Using rem/vh/vw units over pixels(do this after completing 15-20 project otherwise no)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Font Size Units | Responsive Design</title>
+    <style>
+        html{
+            font-size: 25px;
+        }
+        .container{
+            /*rem em, vh,vw do this after completing 15-20 project otherwise no*/
+            /*width: 400px;*/
+            /*height: 350px;*/
+            width: 100vw;/*viewport width not use mostly because we can set width in % also*/
+            height: 100vh;/*take height to below vh=viewport height*/
+            border: 2px solid red;
+            font-size: 10px;/*used for #first*/
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            /*font-size: 3em;/*3em font size 3x than parent size i.e parent font size is 10 so 3x means 30px(10em means 10x=100px, 5em 5x=50px etc..)*/
+            /*padding: 4em;/*all four size padding is 3emx(3x10px)=90px first take 3x of font size then multiply by 3em (4em= 4x(10x3)=120px)*/
+            
+        }
+        #second{
+            /*font-size: 3rem;/*3rem font size 3x than root element .ie html{font-size: 25px;} 3remx25px=75px font size*/
+            /*padding: 3rem;/*same for padding also*/
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is a first heading</h1>
+        <h1 id="second">This is a second heading</h1>
+        <h1 id="third">This is a third heading</h1>
+    </div>
+</body>
+</html>

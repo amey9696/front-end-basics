@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Freak</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body{
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(images/gym.jpg);
+    }
+    .left{
+        display: inline-block;
+        position: absolute;
+        left: 38px;
+        top: 18px;
+    }
+    .mid{
+        display: block;
+        width: 33%;
+        margin: 12px auto; /*margin:top x-axis;*/
+
+    }
+    .right{
+        display: inline-block;
+        position: absolute;
+        right: 38px;
+        top: 18px;
+    }
+    .navbar li{
+        display: inline-block;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none; /* remove underline*/
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: red;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="images/weight.png">
+            <div>Golden Gym</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calaculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for button -->
+        <div class="right">
+            i am right
+        </div>
+    </header>
+</body>
+</html>

@@ -1,0 +1,30 @@
+#example-div,#example-div2,#example-div3{
+    background:url('background.jpg') #cc0000 no-repeat ;
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+    /*2. use nargin auto (no need of style in .parent-div)*/
+    /* margin: 0 auto; */
+    
+    /*3. combination of text-align:center & display: inline-block*/
+    display: inline-block;
+    margin: 20px;
+    /*4. 2D transform (req position absolute)(no need of style in .parent-div)*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.parent-div{
+    
+    /*1. use flex layout (no need of style in #example-div )*/
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    /* end of flex    */
+    
+    /*3. combination of text-align:center & display: inline-block*/
+    /* text-align: center; */
+}

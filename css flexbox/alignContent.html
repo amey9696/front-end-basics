@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Contents</title>
+    <style>
+        h1{
+            padding: 0 0 0 40px;
+        }
+        .container{
+            background: #eee;
+            margin: 50px;
+            padding: 10px;
+            border: 3px solid #000;
+            height: 400px;
+            width: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            align-content: flex-end;
+            /* align-content: center; */
+            align-content: space-around;
+            align-content: space-between;
+            align-content: space-evenly;
+        }
+        .item1{background: orangered;}
+        .item2{background: yellowgreen;}
+        .item3{background: mediumpurple;}
+        .item4{background: hotpink;}
+        .item5{background: royalblue;}
+        .item6{background: orchid;}
+        .item7{background: goldenrod;}
+        .item8{background: #7dcea0;}
+        .items{
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ALIGN CONTENT PROPERTY</h1>
+    <h2>Vertical Alignment</h2>
+    <ol>
+        <li>flex-start</li>
+        <li>flex-end</li>
+        <li>center</li>
+        <li>stretch (default)</li>
+        <li>baseline</li>
+        <li>space-around</li>
+        <li>space-between</li>
+        <li>space-evenly</li>
+    </ol>
+    <div class="container">
+        <div class="items item1">One</div>
+        <div class="items item2">Two</div>
+        <div class="items item3">Three</div>
+        <div class="items item4">Four</div>
+        <div class="items item5">Five</div>
+        <!-- <div class="items item6">Six</div>
+        <div class="items item7">Seven</div>
+        <div class="items item8">Eight</div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrap</title>
+    <style>
+        h1{
+            padding: 0 0 0 40px;
+        }
+        .container{
+            background: #eee;
+            margin: 50px;
+            padding: 10px;
+            border: 3px solid #000;
+            display: flex;
+        /*if u set width or height here then items present flex are overlapped*/
+            width: 300px;
+            /*height: 200px;
+            flex-direction: column;*/
+       /* for solving this overflow or overlap problem we use flex wrap property....it include 3 options for flex-wrap: wrap, nowrap, wrap-reverse*/
+            /*flex-wrap: wrap;
+            flex-wrap: wrap-reverse;*/
+        /*flex flow means we use flex-direction and flex-wrap in one statement*/
+            flex-flow: row wrap;
+        }
+        .item1{background: orangered;}
+        .item2{background: yellowgreen;}
+        .item3{background: mediumpurple;}
+        .item4{background: hotpink;}
+        .item5{background: royalblue;}
+        .item6{background: orchid;}
+        .item7{background: goldenrod;}
+        .item8{background: #7dcea0;}
+        .items{
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+            height: 10vh;
+        }
+    </style>
+</head>
+<body>
+    <h1>FLEX WRAP PROPERTY</h1>
+    <ol>
+        <li>nowrap(default)</li>
+        <li>wrap</li>
+        <li>wrap-reverse</li>
+    </ol>
+    <div class="container">
+        <div class="items item1">One</div>
+        <div class="items item2">Two</div>
+        <div class="items item3">Three</div>
+        <div class="items item4">Four</div>
+        <div class="items item5">Five</div>
+        <!-- <div class="items item6">Six</div>
+        <div class="items item7">Seven</div>
+        <div class="items item8">Eight</div> -->
+    </div>
+    <p>flex wrap used for solving overflow problem. Eg- flex-wrap: wrap;</p>
+    <p>flex flow means we use flex-direction and flex-wrap in one statement. Eg- flex-flow: row wrap;</p>
+</body>
+</html>

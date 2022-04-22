@@ -1,0 +1,95 @@
+<!-- video 28 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+
+            /*flex properties for flex containers*/
+            flex-direction: row;/*by default is row*/
+            /*flex-direction: column;/*flex item align in colun wise one below one*/
+            /*flex-direction: row-reverse;/*flex item align right to left row wise*/
+            /*flex-direction: column-reverse;/*flex item align in colun wise one below one but in reverse */
+            /*flex-wrap: wrap;/*by default no wrap set, wrap means in responsive design how items are look like i.e according to size elements are set in next line */
+            /*flex-wrap: wrap-reverse;/*reverse wrap*/
+            /*flex-flow: column wrap;/*use 2 properties at a time wrap and direction*/
+
+            /*jusify content will justify the content in horizontal direction*/
+            /*justify-content: center;*/
+            /*justify-content: space-between;*/
+            /*justify-content: space-evenly;*/
+            /*justify-content: space-around;*/
+            
+            /*align items will justify the content in vertical direction*/
+            /*align-items: center;/*vertically center*/
+            /*align-items: flex-end;*/
+            /*align-items: flex-start;/*by default set*/
+            /*align-items: stretch;/*required wrap*/
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid blue;
+            margin: 10px;
+            padding: 3px;
+        }
+        #item-1{
+            /*Flex properties for a flex item*/
+            /*order: 2;/*higher order later it shows up in the container*/
+            /*flex-grow: 3;/*take 3 boxes length*/
+            flex-basis: 420px;/*It is not width neither height require flex-direction:row; or flex-direction:column; in .container*/
+            /*when flex-direction:row; then flex-basis will control width*/
+            /*when flex-direction:column; then flex-basis will control height*/
+        }
+        #item-2{
+            /*Flex properties for a flex item*/
+            /*flex-grow: 2;*/
+           /* flex-shrink: 3;/*when u resize the window using developer tool then this box size is low according to others*/
+        }
+        #item-3{
+            flex:2 2 230px;  /*flex:grow shrink basis*/
+            /*align-items: flex-start; */         
+            /*align-self: flex-end;*/
+            /*align-self: center;*/
+        } 
+    </style>
+</head>
+<body>
+    <h1>Flexbox tutorials</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">third Box</div>
+        <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div>
+    </div>
+</body>
+</html>
+
+<!-- 
+what is flexBox?
+Flexbox is a one-dimensional layout method for laying out items in rows or columns.
+CSS flexbox is a better way to align items into a container.
+Flexbox=flexible+box
+selector  Property  value
+    |         |       |
+    p   {  color :   blue }
+better way to align items 
+-->
+<!-- div has display box -->
+<!-- 
+    Initialize container as flex i.e display:flex; is compulsory.
+    flex properties for flex container;-
+    flex-direction:row;//by default it is row
+-->
+<!-- flexbox is solution for displays problem, float problem etc thats reason why it is most popular -->

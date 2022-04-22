@@ -1,0 +1,14 @@
+// console.time('code execution start');
+console.log("hello");
+console.log(25);
+console.log(3+5);
+console.log(true);
+console.log('3'+'5');
+console.log([1,2,3]);
+console.log({amey:'this',marks:35});
+console.table({amey:'this',marks:35});
+console.warn("this is simple warning");
+// console.clear();
+// console.timeEnd('code execution end');
+// console.assert(userAge>101,'Please enter value between 1 to 100 only');
+console.error("simple error");

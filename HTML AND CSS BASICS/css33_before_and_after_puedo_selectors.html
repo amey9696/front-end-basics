@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo selectors</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color:black ;
+            color: white;
+            background:url(bg.jpg) no-repeat center center/cover;
+        }
+        header::before{
+            content: "";
+            background:url(bg.jpg) no-repeat center center/cover;
+            position: absolute;
+            top: 0; /*In absolute position, some space create in top and left for removing space use top,left, bottom, right(according to your choice set 0)*/
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;/*display content of document*/
+            opacity: 0.5;
+        }
+        .navigation{
+            display: flex;
+            font-size: 20px;
+            height: 50px;
+            margin-top: -10px;
+            background-color: rgb(210, 235, 235);
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        section{
+            height: 400px;
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        /*section::before{
+            content:"this is a content";
+        }
+        section::after{
+            content:"this is another content";
+        }*/
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to coding world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat veniam iste saepe in temporibus, praesentium est qui fugit tempore aut provident aliquam neque maiores mollitia suscipit sapiente ullam optio quisquam, perspiciatis adipisci illo. Quod, odit!</p>
+    </section>
+</body>
+</html>

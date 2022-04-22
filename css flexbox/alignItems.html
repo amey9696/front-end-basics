@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Items</title>
+    <style>
+        h1{
+            padding: 0 0 0 40px;
+        }
+        .container{
+            background: #eee;
+            margin: 50px;
+            padding: 10px;
+            border: 3px solid #000;
+            height: 400px;
+            display: flex;
+            align-items: stretch;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+            align-items: baseline;
+        }
+        .item1{background: orangered;}
+        .item2{background: yellowgreen; height: 100px;}
+        .item3{background: mediumpurple;}
+        .item4{background: hotpink;}
+        .items{
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ALIGN ITEMS PROPERTY</h1>
+    <h2>Vertical Alignment</h2>
+    <ol>
+        <li>flex-start</li>
+        <li>flex-end</li>
+        <li>center</li>
+        <li>stretch (default)</li>
+        <li>baseline</li>
+    </ol>
+    <div class="container">
+        <div class="items item1">One</div>
+        <div class="items item2">Two</div>
+        <div class="items item3">Three</div>
+        <div class="items item4">Four</div>
+    </div>
+</body>
+</html>

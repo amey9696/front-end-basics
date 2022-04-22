@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .grid-container {
+  display: grid;
+  grid-template-columns: 8% 8% 8% 8% 8% 8%;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.item8 {
+  grid-area: 2 / 2 / 7 / 7;
+  background-color: #eee;
+  border-radius: 5px;
+}
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 20% 20% 19% 19% 19%;
+  grid-gap: 5px;
+  padding: 10px;
+  margin-top: -25px;
+  margin-bottom: -30px;
+}
+.grid-items {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+.m-5{
+  margin-top: -5px;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Elements</h1>
+
+<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+
+<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+
+<div class="grid-container">
+  <div class="item1 none"></div>
+  <div class="item2 none">Lazada</div>
+  <div class="item3 none">Shopee</div>  
+  <div class="item4 none">Blibli</div>
+  <div class="item5 none">Tokopedia</div>
+  <div class="item6 none">Harvey Norman</div>
+  <div class="item7 none">Samsung</div>
+  <div class="item8">
+    <div class="grid-container2">
+      <div class="grid-items">1</div>
+      <div class="grid-items">2</div>
+      <div class="grid-items">3</div>  
+      <div class="grid-items">4</div>
+      <div class="grid-items">5</div>
+      <div class="grid-items">6</div>  
+      <div class="grid-items">7</div>
+      <div class="grid-items">8</div>
+      <div class="grid-items">9</div>
+      <div class="grid-items">10</div>
+      <div class="grid-items">6</div>  
+      <div class="grid-items">7</div>
+      <div class="grid-items">8</div>
+      <div class="grid-items">9</div>
+      <div class="grid-items">10</div>
+      <div class="grid-items">6</div>  
+      <div class="grid-items">7</div>
+      <div class="grid-items">8</div>
+      <div class="grid-items">9</div>
+      <div class="grid-items">10</div>
+      <div class="grid-items">6</div>  
+      <div class="grid-items">7</div>
+      <div class="grid-items">8</div>
+      <div class="grid-items">9</div>
+      <div class="grid-items">10</div>
+    </div>
+  </div>  
+  <div class="item9">LG</div>
+  <div class="item10" >Apple</div>
+  <div class="item11 m-5">Xiomi</div>
+  <div class="item12 m-5">Panasonic</div>
+</div>
+
+
+</body>
+</html>
+
+
+<!-- 9594179174 -->

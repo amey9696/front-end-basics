@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More On Selectors</title>
+    <style>
+        h1 {
+            color: black;
+            background-color: red;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /*div > p means direct <p> present then style otherwise not (not in any other element <p> present such as any list, table, inside any other div tag etc)*/
+       /* div > p { 
+            color:red;
+            background-color: aquamarine;
+            font-weight: bold;
+        }*/
+
+        /*apply only those paragraph whose start after ending any div tag */
+        /*div + p{ 
+            color:red;
+            background-color: aquamarine;
+            font-weight: bold;
+        }*/
+
+        /*gives only those <P> who present inside div as well as in list*/
+        /*div li p {
+            color: green;
+            background-color: khaki;
+            font-weight: bold;
+        }*/
+
+        /*gives only those <P> who present inside div*/
+        /*div  p {
+            color: blue;
+            background-color: tomato;
+            font-weight: bold;
+        }*/
+    </style>
+</head>
+<body>
+    <h1>This is more no selectors</h1>
+    <div class="container">
+        <div class="row">
+            <p>This is a div paragraph =NO1</p>
+        </div>
+        <p>This is also div paragraph =NO2</p> <!-- div+p{ css apply}-->
+        <ul>
+            <li class="item">
+                <p>This is a div paragraph inside li =NO3</p>
+            </li>
+            
+            <li class="item">
+                <p>This is a div paragraph inside li =NO4</p>
+            </li>
+            <li>This is another list</li>
+            <p>This is another div paragraph =NO5</p>
+        </ul>
+        <p>This is another div paragraph =NO6</p>
+    </div>
+    <p>This is outermost div paragraph =NO7</p> <!-- div+p{ css apply}-->
+   
+</body>
+</html>

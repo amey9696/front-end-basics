@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Media Qquery For Grid</title>
+    <style>
+        *{
+            color: red;
+        }
+        .banner{
+            display: grid;
+            height: 300px;
+            grid-gap: 1rem;
+            grid-template-areas:
+           ' navbar navbar navbar navbar'
+            'aside section section section' 
+            'footer footer footer footer' 
+            ;
+        } 
+        @media (max-width:300px) {
+            body{
+                background-color: red;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+            aside{
+                display: none;
+            }
+            .container{
+                grid-template-areas:
+                ' navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside' 
+                'footer footer footer footer' 
+                ;
+            }
+        }
+        @media (min-width:300px) and (max-width:500px)  {
+            body{
+                background-color: blue; 
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+            .container{
+                grid-template-areas:
+                ' navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside' 
+                'footer footer footer footer' 
+                ;
+            }
+            aside{
+                display: none;
+            }
+        }
+        @media (min-width:500px) and (max-width:800px)  {
+            body{
+                background-color: yellow;
+            }
+            .container{
+                grid-template-areas:
+                ' navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside' 
+                'footer footer footer footer' 
+                ;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media (min-width:800px){
+            body{
+                background-color: orange;
+            }
+        }
+        .bdr{
+            border: 2px solid black;
+            background-color: white;
+            padding:20px 50px 50px 50px;
+        }
+        nav{
+            grid-area: navbar;
+        }
+        section{
+            grid-area: section;
+            margin: 50px 0px 0px -250px;
+        }
+        aside{
+            grid-area: aside;
+            width: 250px;
+        }
+        .distance{
+            margin-top: -10px;
+        }
+        button{
+            background-color:rgb(233, 215, 56);
+            border: none;
+            width: 120px;
+            height: 30px;
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact Us</span> 
+        </nav> -->
+
+        <section class="bdr">
+            <h2 >Learn css in hindi</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis quos esse delectus, deserunt culpa dicta voluptatum aliquam praesentium magni aspernatur et quasi sequi optio eius neque veniam dolores quo veritatis repellat illum. Sit, in beatae nulla pariatur eveniet, consequatur praesentium maxime impedit similique deserunt cum necessitatibus consectetur vero blanditiis libero itaque doloribus, harum earum. Eligendi nobis necessitatibus maiores dolor, harum consectetur quod ad. Accusamus molestiae iusto sunt alias, distinctio amet minima nostrum, unde ea, non maxime eaque. Iusto assumenda, totam in, ratione nobis officia dolore earum laboriosam libero aut similique magnam repudiandae? Qui, porro! Repellendus velit placeat possimus maiores pariatur?</p>
+        </section>
+        <aside class="bdr">
+            <h1>More about Us</h1>
+        </aside>
+    </div>
+   
+   
+    <footer class="bdr">Copyright &copy; Amey Palshetkar 2021</footer>
+</body>
+</html>

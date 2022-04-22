@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content</title>
+    <style>
+        h1{
+            padding: 0 0 0 40px;
+        }
+        .container{
+            background: #eee;
+            margin: 50px;
+            padding: 0px;
+            border: 3px solid #000;
+            display: flex;
+            justify-content: center;
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly;
+        }
+        .item1{background: orangered;}
+        .item2{background: yellowgreen;}
+        .item3{background: mediumpurple;}
+        .item4{background: hotpink;}
+        .items{
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JUSTIFY CONTENT PROPERTY</h1>
+    <OL>
+        <li>flex-start(default)</li>
+        <li>flex-end</li>
+        <li>center</li>
+        <li>space-around</li>
+        <li>space-between</li>
+        <li>space-evenly</li>
+    </OL>
+    <div class="container">
+        <div class="items item1">One</div>
+        <div class="items item2">Two</div>
+        <div class="items item3">Three</div>
+        <div class="items item4">Four</div>
+    </div>
+</body>
+</html>
