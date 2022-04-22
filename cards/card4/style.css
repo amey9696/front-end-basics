@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    padding: 0px 0 50px 40px;
+}
+
+.container{
+    margin: 5px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item1, .item2{
+    display: flex;
+}
+.item1 > .subitem{
+    background: #fff;
+    margin: 5px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.item1 > .subitem1, .subitem2{
+    height: 60vh;
+    border-radius: 10px;
+}
+.item1 > .subitem1{
+    width: 40%;
+}
+.item1 > .subitem2{
+    width: 70%;
+}
+
+.item2 > .subitem{
+    background: #fff;
+    flex-grow: 1;
+    margin: 200px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 55vh;
+}
+.item2 > .subitem1{
+    margin: 20px 10px 20px 20px;
+    border-radius: 10px;
+    width: 50%;
+}
+.item2 > .subitem2{
+    margin: 20px 20px 20px 10px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 10px 0px 10px;
+    line-height: 1px;
+}
+
+.title, .subtitle{
+    font-size: 15px;
+}
+
+.title{
+    color: blue;
+}
+
+.subtitle{
+    color: grey;
+}
+
+ul li {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+ul li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    font-size:30px;
+    vertical-align:middle;
+    margin-left: -0.5em;
+}
+
+.rows{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 16% 16% 15% 15% 14%;
+    grid-gap: 5px;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    text-align: center;
+    padding: 18px 0;
+    font-size: 15px;
+  }
+  
+  .item8 {
+    grid-area: 2 / 2 / 7 / 7;
+    background-color: #eee;
+    border-radius: 5px;
+  }
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: 20% 20% 19% 19% 19%;
+    grid-gap: 5px;
+    padding: 10px;
+    margin-top: -25px;
+    margin-bottom: -30px;
+  }
+  .grid-items {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 13px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .m-10{
+    margin-top: -10px;
+  }
