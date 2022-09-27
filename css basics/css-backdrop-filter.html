@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Backdrop Filter</title>
+    <style>
+        #container{
+            width: 800px;
+            height: 500px;
+            border: 5px solid #000;
+            background: url(images/lion.jpg) center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #inner{
+            width: 400px;
+            height: 250px;
+            border-radius: 5px;
+            text-align: center;
+            border: 2px solid red;
+            /* background-color: rgba(255, 255, 255, 0.4); */
+            backdrop-filter: blur(2px);
+            /* backdrop-filter: brightness(150%); */
+            /*backdrop-filter: contrast(150%);/*darkness of image*/
+            /* backdrop-filter: hue-rotate(200deg); */
+            /*backdrop-filter: invert(80%);/*x-ray type or old camera role images*/
+            /*backdrop-filter: sepia(70%); /*old type less brightness image*/
+            /*backdrop-filter: saturate(60%);/*below 50% values are de-saturate and above 50% values are saturate*/
+            /* backdrop-filter: grayscale(60%); */
+
+            transition: backdrop-filter 3s;
+        }
+        #inner:hover{
+            /* all effect in one way */
+            backdrop-filter: blur(50px) sepia(80%) contrast(150%);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Backdrop Filter</h1>
+    <h3>Properties:-</h3>
+    <ol>
+        <li>blur</li>
+        <li>brightness</li>
+        <li>contrast</li>
+        <li>drop-shadow (currently not support)</li>
+        <li>grayscale</li>
+        <li>hue-rotate</li>
+        <li>invert</li>
+        <li>opacity (currently not support)</li>
+        <li>sepia</li>
+        <li>saturate</li>
+        <li>none</li>
+    </ol>
+
+    <div id="container">
+        <div id="inner">
+            <h1>HTML</h1> 
+        </div>
+    </div>
+</body>
+</html>

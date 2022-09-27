@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Grid</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            background: #eee;
+            width: 700px;
+            height: 500px;
+            margin: 70px 0 0 50px;
+
+            display: grid;
+            /*grid-template-columns: 250px 200px auto;/*3rd column take remaining all space*/
+            /*grid-template-columns: 50% 200px auto;*/
+            /*grid-template-columns: 1fr 2fr 1fr;/*fr means fraction */
+            /*grid-template-columns: repeat(3, 1fr);/*i.e 3columns which width is 1fr (col_no, width?) */
+            /*grid-template-columns: repeat(2, 25%) 2fr;/*i.e 2columns which width is 25% and last one is 2fr */
+            grid-template-columns: auto auto auto;/*i.e 2columns which width is 25% and last one is 2fr */
+            /*grid-template-rows: 150px 100px;*/
+            /*grid-template-rows: repeat(2, 1fr);*/
+            grid-template-rows: auto auto;
+
+            grid-gap: 20px;
+        }
+        .items1{
+            background: orangered;
+        }
+        .items2{
+            background: yellowgreen;
+        }
+        .items3{
+            background: slateblue;
+        }
+        .items4{
+            background: hotpink;
+        }
+        .items5{
+            background: royalblue;
+        }
+        .items6{
+            background: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h1>Creating Grid</h1>
+    <h2>Properties used:-</h2>
+    <ol>
+        <li>grid-template-columns</li>
+        <li>grid-template-rows</li>
+    </ol>
+
+    <div class="container">
+        <div class="items items1">1</div>
+        <div class="items items2">2</div>
+        <div class="items items3">3</div>
+        <div class="items items4">4</div>
+        <div class="items items5">5</div>
+        <div class="items items6">6</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,3 @@
+JS is Backword compatible i.e we use old feature in current program/browser but it is not forword compatible .ie modern feature not work in old browser (if any person use 15 years old browser then it should not work).
+By using Babel compiler, we convert modern js code into oldest one and run on oldest version browser.
+js issynchronous programming single threaded langauge

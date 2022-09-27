@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aligining Grid Items</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            background: #eee;
+            width: 650px;
+            margin: 45px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,120px); 
+            grid-gap: 10px;
+            
+            /* align-items gives styling to all items */
+            /* align-items: center; */
+            /* align-items: start; */
+            /* align-items: end; */
+            /*align-items: stretch;/*by default value*/
+            
+            /* justify-items gives styling to all items */
+            /* justify-items: start; */
+            /* justify-items: end; */
+            /* justify-items: center; */
+            /*justify-items: stretch;/*by default value*/
+
+            /* shorthand place-items:align-items, justify-items;*/
+            place-items: start end;
+        }
+        .items1{
+            background: orangered;
+        }
+        .items2{
+            background: yellowgreen;
+
+            /* align-self gives styling to particular items */
+            /* align-self: center; */
+            /* align-self: start; */
+            /* align-self: end; */
+            /*align-self: stretch;/*by default value*/
+            
+            /* justify-self gives styling to particular items */
+            /* justify-self: start; */
+            /* justify-self: end; */
+            /* justify-self: center; */
+            /*justify-self: stretch;/*by default value*/
+            
+            /* shorthand place-self:align-self, justify-self;*/
+            place-self: center stretch;
+        }
+        .items3{
+            background: mediumpurple;
+            grid-row: span 3;
+        }
+        .items4{
+            background: hotpink;
+        }
+        .items5{
+            background: royalblue;
+        }
+        .items6{
+            background: orchid;
+        }
+        .items7{
+            background: goldenrod;
+            grid-column: span 2;
+        }
+        .items8{
+            background: #7dcea0;
+        }
+        .items{
+            font-size: 20px;
+            color:white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aligining Grid Items</title>
+    <h2>Properties used:-</h2>
+    <ol>
+        <li>Vertical Alignment</li>
+        <ol>
+            <li>align-items</li>
+            <li>align-self</li>
+        </ol>
+        <p>Properties</p>
+        <ul>
+            <li>start(top)</li>
+            <li>end(bottom)</li>
+            <li>center</li>
+            <li>stretch(normal/defalut value)</li>
+        </ul>
+        
+        <li>Horizontal Alignment</li>
+        <ol>
+            <li>justify-items</li>
+            <li>justify-self</li>
+        </ol>
+        <p>Properties</p>
+        <ul>
+            <li>start(left)</li>
+            <li>end(right)</li>
+            <li>center</li>
+            <li>stretch(normal/defalut value)</li>
+        </ul>
+        
+        <li>place-items (short hand of align-items and justify-items)</li>
+        <li>place-self (short hand of align-self and justify-self)</li>
+    </ol>
+
+    <p>SYNTAX===== place-items:align-items, justify-items;</p>
+    <p>EXAMPLE==== place-items:center, start;</p>
+
+<div class="container">
+        <div class="items items1">One</div>
+        <div class="items items2">Two</div>
+        <div class="items items3">Three</div>
+        <div class="items items4">Four</div>
+        <div class="items items5">Five</div>
+        <div class="items items6">Six</div>
+        <div class="items items7">Seven</div>
+        <div class="items items8">Eight</div>
+    </div>
+</body>
+</html>

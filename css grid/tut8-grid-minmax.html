@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid MinMax() Function</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            background: #eee;
+            width: 80%;
+            margin: 45px auto 0;
+
+            display: grid;
+           /* grid-template-columns: 1fr 1fr 1fr 1fr;*/
+            /*grid-template-columns: max-content 1fr 1fr min-content; /*in max-content->according to content, first column adjust his size; in min-content-> The column size is depend on which word is big according to that word size*/
+            grid-template-columns: minmax(150px,300px) 1fr 1fr min-content; /*in max-content->according to content, first column adjust his size; in min-content-> The column size is depend on which word is big according to that word size*/
+           /* grid-template-rows: repeat(2,150px);*/
+            /*grid-template-rows: repeat(2,min-content); /*for solving overflow problem in 4th column in forst row*/
+            grid-template-rows: repeat(2,minmax(100px, min-content)); 
+            grid-gap: 10px;
+        }
+        .items1{
+            background: red;
+        }
+        .items2{
+            background: orange;
+        }
+        .items3{
+            background: yellow;
+        }
+        .items4{
+            background: green;
+        }
+        .items5{
+            background: royalblue;
+        }
+        .items6{
+            background: indigo;
+        }
+        .items7{
+            background: purple;
+        }
+        .items8{
+            background: #7dcea0;
+        }
+        .items{
+            font-size: 20px;
+            color:white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid MinMax() Function</h1>
+    <h2>Properties used:-</h2>
+    <ol>
+        <li>Max-content</li>
+        <li>Min-content</li>
+        <li>Minmax()</li>
+    </ol>
+
+    <div class="container">
+        <div class="items items1">One Lorem ipsum dolor sit amet.</div>
+        <div class="items items2">Two</div>
+        <div class="items items3">Three</div>
+        <div class="items items4">Four Lorem ipsum dolor sit amet consectetur Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, accusantium.</div>
+        <div class="items items5">Five</div>
+        <div class="items items6">Six</div>
+        <div class="items items7">Seven</div>
+        <div class="items items8">Eight</div>
+    </div>
+</body>
+</html>

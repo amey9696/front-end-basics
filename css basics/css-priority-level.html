@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Priority Level</title>
+    <style>
+        h3{
+            color: green !important;
+        }
+        .first{
+            color: blue;
+        }
+        #second{
+            color: red !important;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>CSS Priority Level</h1>
+        <h2>How to implement CSS in HTML (which css has more priority..)</h2>
+        <ol>
+            <li>style="color:orange;"</li>
+            <li>#id-name{color:green;}</li>
+            <li>.class-name{color:blue;}</li>
+            <li>tag-name{color:red;}</li>
+        </ol>
+    </div>
+
+    <h1>Example below:-</h1>
+    <h3 class="first" id="second" style="color: orchid;">This is just testing</h3>
+</body>
+</html>

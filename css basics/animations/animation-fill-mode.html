@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Fill Mode</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background: black;
+            margin-left: 20px;
+
+            /* animation-fill-mode: none; /*default value */
+            /*animation-fill-mode: backwards;/*start from 0% position,after complete animation goes to initial state*/
+            /*animation-fill-mode: forwards;/*stop at 100% position, not goes to initial state*/
+            /*animation-fill-mode: both;/*start from 0% and end on 100%, not goes to initial position*/
+            animation: sample 2s 5s forwards;
+            animation-play-state: paused; /*dont put here.animation cannot run. if you run animation then use animation-play-state: running in hover */
+        }
+        .box:hover{
+            animation-play-state: running;
+        }
+        @keyframes sample {
+            0%{
+                background: red;
+                width: 250px;
+            }
+            50%{
+                background: orange;
+                width: 350px;
+            }
+            100%{
+                background: green;
+                width: 450px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation Fill Mode</h1>
+    <h3>Properties:-</h3>
+    <ol>
+        <li>none</li>
+        <li>forwards</li>
+        <li>backwards</li>
+        <li>both</li>
+    </ol>
+    <h3>Animation Play state Values:</h3>
+    <ol>
+        <li>paused (used when user hover on animation then stop)</li>
+        <li>running</li>
+    </ol>
+    <div class="box"></div>
+</body>
+</html>

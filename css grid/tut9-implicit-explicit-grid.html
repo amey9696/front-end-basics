@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implicit Grid And Explicit Grid</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            background: #eee;
+            width: 650px;
+            margin: 45px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,120px); 
+            grid-gap: 10px;
+
+            grid-auto-rows: 80px;
+            grid-auto-flow: column;
+            grid-auto-columns: .5fr;
+        }
+        .items1{
+            background: red;
+        }
+        .items2{
+            background: orange;
+        }
+        .items3{
+            background: yellow;
+        }
+        .items4{
+            background: green;
+        }
+        .items5{
+            background: royalblue;
+        }
+        .items6{
+            background: indigo;
+        }
+        .items7{
+            background: purple;
+        }
+        .items8{
+            background: #7dcea0;
+        }
+        .items{
+            font-size: 20px;
+            color:white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Implicit Grid And Explicit Grid</title>
+    <h2>Properties used:-</h2>
+    <ol>
+        <li>grid-auto-rows</li>
+        <li>grid-auto-columns</li>
+        <li>grid-auto-flows</li>
+    </ol>
+    <p>Here first four grid items are explicitly designed .ie.we declare styling for 4 items</p>
+    <p>remaiming items are implicitly designed i.e we didn't give any styling to that</p>
+<div class="container">
+        <div class="items items1">One</div>
+        <div class="items items2">Two</div>
+        <div class="items items3">Three</div>
+        <div class="items items4">Four</div>
+        <div class="items items5">Five</div>
+        <div class="items items6">Six</div>
+        <div class="items items7">Seven</div>
+        <div class="items items8">Eight</div>
+        <div class="items items8">Eight</div>
+        <div class="items items8">Eight</div>
+    </div>
+</body>
+</html>

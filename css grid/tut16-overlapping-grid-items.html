@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Grid</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            background: #eee;
+            width: 300px;
+            margin: 50px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(2,150px);
+            grid-template-rows: repeat(2,150px);
+        }
+        .items1{
+            background: orangered;
+            grid-column: 1/span 2;
+            grid-row: 1/span 2;
+            align-self: start;
+            z-index: 1;
+        }
+        .items2{
+            background: yellowgreen;
+            grid-column: 1/span 2;
+            grid-row: 1/span 2;
+            align-self: center;
+            justify-self: center;
+            z-index: 3;
+        }
+        .items3{
+            background: mediumpurple;
+            grid-column: 1/span 2;
+            grid-row: 1/span 2;
+            align-self: end;
+            justify-self: end;
+            z-index: 2;
+        }
+        /* .items4{
+            background: hotpink;
+        } */
+        .items{
+            font-size: 20px;
+            color:white;
+            padding: 10px;
+            max-width: 150px;
+        }
+    </style>
+</head>
+<body>
+<h1>Nested Grid</h1>
+<p>for changing stack order(means which grid data show perfect), use z-index property in required items.. i.e in item1/item2/item3</p>
+<div class="container">
+        <div class="items items1">One Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat accusamus ratione laudantium tempore sit non.</div>
+        <div class="items items2">Two Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat accusamus ratione laudantium tempore sit non.</div>
+        <div class="items items3">Three Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat accusamus ratione laudantium tempore sit non.</div>
+        <!-- <div class="items items4">Four</div> -->
+    </div>
+</body>
+</html>

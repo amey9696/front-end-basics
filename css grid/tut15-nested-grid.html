@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Grid</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            background: #eee;
+            width: 650px;
+            margin: 50px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,150px);
+            grid-gap: 10px;
+        }
+        .items1{
+            background: orangered;
+        }
+        .items2{
+            background: yellowgreen;
+        }
+        .items3{
+            background: mediumpurple;
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            grid-gap: 10px;
+        }
+        .items4{
+            background: hotpink;
+        }
+        .items{
+            font-size: 20px;
+            color:white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Nested Grid</h1>
+<div class="container">
+        <div class="items items1">One</div>
+        <div class="items items2">Two</div>
+        <div class="items items3">
+            <div class="subitem1" style="background: white;color: red;padding: 10px;">One</div>
+            <div class="subitem2" style="background: white;color: red;padding: 10px;">Two</div>
+            <div class="subitem3" style="background: white;color: red;padding: 10px;">Three</div>
+            <div class="subitem3" style="background: white;color: red;padding: 10px;">Four</div>
+        </div>
+        <div class="items items4">Four</div>
+    </div>
+</body>
+</html>

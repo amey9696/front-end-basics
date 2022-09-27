@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Fit Content</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            background: #eee;
+            width: 650px;
+            margin: 50px auto 0;
+
+            display: grid;
+            grid-template-columns: fit-content(200px) fit-content(300px) 1fr;
+            grid-template-rows: repeat(2,minmax(100px,min-content));
+            grid-auto-rows: 80px;
+        }
+        .items1{
+            background: orangered;
+        }
+        .items2{
+            background: yellowgreen;
+        }
+        .items3{
+            background: mediumpurple;
+        }
+        .items4{
+            background: hotpink;
+        }
+        .items5{
+            background: royalblue;
+        }
+        .items6{
+            background: goldenrod;
+        }
+        .items{
+            font-size: 20px;
+            color:white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+        <div class="items items1">One Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ullam?</div>
+        <div class="items items2">Two Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quasi ipsa deleniti voluptatem maiores expedita impedit sapiente sint cupiditate fuga?</div>
+        <div class="items items3">Three</div>
+        <div class="items items4">Four</div>
+        <div class="items items5">Five</div>
+        <div class="items items6">Six</div>
+    </div>
+</body>
+</html>

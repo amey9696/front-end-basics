@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background Blend Mode</title>
+    <style>
+        #box{
+            width: 450px;
+            height: 450px;
+            border: 2px solid black;
+            background-image: linear-gradient(to right, red, yellow), url(images/forgot.png) ;
+            /* background-blend-mode:normal; */
+            /* background-blend-mode:multiply; */
+            /* background-blend-mode:screen ; */
+            /* background-blend-mode:overlay ; */
+            /* background-blend-mode:darken; */
+            /* background-blend-mode:lighten; */
+            /* background-blend-mode:color-dodge; */
+            /* background-blend-mode:color-burn; */
+            /* background-blend-mode:hard-light; */
+            /* background-blend-mode:soft-light; */
+            /* background-blend-mode:difference; */
+            /* background-blend-mode:exclusion; */
+            /* background-blend-mode:hue; */
+            /* background-blend-mode:color; */
+            /* background-blend-mode:saturation; */
+            background-blend-mode:luminosity;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Background Blend Mode</h1>
+    <p>If you use image and gradient at a same time for background then you can mixed them and form another effect</p>
+    <h3>Properties used:-</h3>
+    <ol>
+        <li>Normal (default)</li>
+        <li>Multiply</li>
+        <li>Screen</li>
+        <li>Overlay</li>
+        <li>Darken</li>
+        <li>Lighten</li>
+        <li>color-dodge</li>
+        <li>color-burn</li>
+        <li>hard-light</li>
+        <li>soft-light</li>
+        <li>difference</li>
+        <li>exclusion</li>
+        <li>hue</li>
+        <li>Color</li>
+        <li>Saturation</li>
+        <li>luminosity</li>
+    </ol>
+
+    <div id="box">
+        <h1>HTML CSS</h1>
+    </div>
+</body>
+</html>

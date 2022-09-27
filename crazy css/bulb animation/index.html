@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bulb Light On Animation</title>
+</head>
+<body>
+    <div class="lamp js-turnoff-btn">
+        <div class="lamp-item lamp-top"></div>
+        <div class="lamp-item lamp-middle"></div>
+        <div class="lamp-item lamp-bottom"></div>
+        <div class="lamp-item lamp-light open"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- <script src="index.js" defer></script> -->
+    <script>
+        $('body').on('click', '.js-turnoff-btn', function () {
+    $('.lamp-light').toggleClass('open');
+})
+    </script>
+</body>
+</html>

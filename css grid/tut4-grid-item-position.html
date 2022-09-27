@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Item-Position</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            background: #eee;
+            width: 700px;
+            margin: 50px 0 0 50px;
+
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows:repeat(2,150px);
+            grid-gap: 20px;
+        }
+        .items1{
+            background: orangered;
+            /*grid-row-start: 2;
+            grid-row-end: 3; /*not compulsory but imp for responsive design only*/
+           /* grid-column-start: 3;
+            /*grid-column-end: 4;/*not compulsory but imp for responsive design only*/
+            
+            /*Short hands*/
+           /* grid-row: 2/3; /*start/end*/
+           /* grid-column: 3/4;*/
+
+            /*grid area (i.e all in one line)*/
+            grid-area: 2/3/3/4; /*rowStart/colStart/rowEnd/colEnd*/
+        }
+        .items2{
+            background: yellowgreen;
+        }
+        .items3{
+            background: slateblue;
+        }
+        .items4{
+            background: hotpink;
+        }
+        .items5{
+            background: royalblue;
+        }
+        .items6{
+            background: goldenrod;
+            /*grid-row-start: 1;
+            grid-row-end: 2; 
+            grid-column-start: 1;
+            grid-column-end: 2;*/
+            
+            grid-area: 1/1/2/2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grid-Item-Position</h1>
+    <h2>Properties used:-</h2>
+    <ol>
+        <li>grid-row-start</li>
+        <li>grid-row-end</li>
+        <li>grid-row</li>
+        <li>grid-column-start</li>
+        <li>grid-column-end</li>
+        <li>grid-column</li>
+        <li>grid-area (shorthand of all Properties)</li>
+    </ol>
+
+    <div class="container">
+        <div class="items items1">1</div>
+        <div class="items items2">2</div>
+        <div class="items items3">3</div>
+        <div class="items items4">4</div>
+        <div class="items items5">5</div>
+        <div class="items items6">6</div>
+    </div>
+</body>
+</html>

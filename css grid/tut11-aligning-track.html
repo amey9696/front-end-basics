@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aligining Track</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            background: #eee;
+            width: 700px;
+            height: 700px;
+            margin: 45px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(2,150px);
+            grid-template-rows: repeat(2,100px); 
+            grid-gap: 15px;
+            grid-auto-rows: 50px;
+            grid-auto-flow: row dense;
+
+            /* justify-content */
+            /* justify-content: center; */
+            /* justify-content: start; */
+            /* justify-content: end; */
+            /*justify-content: stretch; /*default value*/
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            justify-content: space-evenly;
+
+            /* align-content */
+            /* align-content: center; */
+            /* align-content: start; */
+            /* align-content: end; */
+            /* align-content: stretch;/*default value*/
+            /* align-content: space-around; */
+            /* align-content: space-between; */
+            align-content: space-evenly;
+        }
+        .items1{
+            background: orangered;
+        }
+        .items2{
+            background: yellowgreen;}
+        .items3{
+            background: mediumpurple;
+            grid-row: span 3;
+        }
+        .items4{
+            background: hotpink;
+        }
+        .items5{
+            background: royalblue;
+        }
+        .items6{
+            background: orchid;
+        }
+        .items7{
+            background: goldenrod;
+            grid-column: span 2;
+        }
+        .items8{
+            background: #7dcea0;
+        }
+        .items{
+            font-size: 20px;
+            color:white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aligining Track</title>
+    <h2>Properties used:-</h2>
+    <ol>
+        <li>Vertical Alignment</li>
+        <ol>
+            <li>align-content</li>
+        </ol>
+        <p>Properties</p>
+        <ul>
+            <li>start(top)</li>
+            <li>end(bottom)</li>
+            <li>center</li>
+            <li>stretch(normal/defalut value)</li> 
+            <li>space-around</li> 
+            <li>space-between</li> 
+            <li>space-evenly</li> 
+        </ul>
+        
+        <li>Horizontal Alignment</li>
+        <ol>
+            <li>justify-content</li>
+        </ol>
+        <p>Properties</p>
+        <ul>
+            <li>start(left)</li>
+            <li>end(right)</li>
+            <li>center</li>
+            <li>stretch(normal/defalut value)</li>
+            <li>space-around</li> 
+            <li>space-between</li> 
+            <li>space-evenly</li> 
+        </ul>
+        
+        <li>place-content (short hand of align-content and justify-content)</li>
+    </ol>
+
+    <!-- <p>SYNTAX===== place-content:align-content, justify-content;</p>
+    <p>EXAMPLE==== place-content:center, start;</p> -->
+
+<div class="container">
+        <div class="items items1">One</div>
+        <div class="items items2">Two</div>
+        <div class="items items3">Three</div>
+        <div class="items items4">Four</div>
+        <div class="items items5">Five</div>
+        <div class="items items6">Six</div>
+        <div class="items items7">Seven</div>
+        <div class="items items8">Eight</div>
+    </div>
+</body>
+</html>
